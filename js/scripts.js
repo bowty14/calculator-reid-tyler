@@ -19,8 +19,8 @@ $(document).ready(function () {
     event.preventDefault();
       var number1 = parseInt($("#input1").val());
       var number2 = parseInt($("#input2").val());
-      var operation = $("input:radio[name=operator]:checked").val();
-      var result;
+      var operator = $("input:radio[name=operator]:checked").val();
+       var result;
       if (operator === "add") {
         result = add(number1, number2);
       }else if (operator === "subtract") {
